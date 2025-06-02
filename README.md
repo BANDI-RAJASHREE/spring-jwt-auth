@@ -6,6 +6,8 @@ This project implements a secure Spring Boot-based REST API with:
 - JWT-based authentication
 - Email service to send OTPs
 
+Add loggers using SLF4J and Documenting REST API Using OpenAPI 3.0
+
 ---
 
 ##  Flow
@@ -20,11 +22,11 @@ This project implements a secure Spring Boot-based REST API with:
 
 ## Endpoints
 
-### POST `/api/auth/send-otp?email={email}`
+### GET `/api/auth/send-otp?email={email}`
 
 - **Description**: Sends OTP to the provided email
 
-### POST `/api/auth/verify-otp?email={email}&otp={otp}`
+### GET `/api/auth/verify-otp?email={email}&otp={otp}`
 - **Description**: Verifies the OTP and issues a JWT
 
 ### GET `/api/test/protected`
